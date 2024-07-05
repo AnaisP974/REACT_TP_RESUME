@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 export default function Portfolio() {
     return(
         <>
-        <Navbar/>
+        <Navbar nav="Portfolio" />
         <main id="main">
             <section id="portfolio" className="portfolio section-bg">
                 <div className="container" data-aos="fade-up">

@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 export default function Services() {
     return (
         <>
-        <Navbar />
+        <Navbar nav="Services" />
         <main id="main">
             <section id="services" className="services">
                 <div className="container" data-aos="fade-up">

@@ -1,5 +1,38 @@
-export default function Navbar() {
-    
+export default function Navbar({ nav }) {
+    // Création d'un tableau d'objet des liens présents dans la barre de navigation
+    const navLinks = [
+        {
+            name: "Home",
+            href: "/",
+            icone: "bx bx-home",
+        },
+        {
+            name: "About",
+            href: "/about",
+            icone: "bx bx-user",
+        },
+        {
+            name: "Resume",
+            href: "/resume",
+            icone: "bx bx-file-blank",
+        },
+        {
+            name: "Portfolio",
+            href: "/portfolio",
+            icone: "bx bx-book-content",
+        },
+        {
+            name: "Services",
+            href: "/services",
+            icone: "bx bx-server",
+        },
+        {
+            name: "Contact",
+            href: "/contact",
+            icone: "bx bx-envelope",
+        },
+    ]
+
     return (
 
     <>
@@ -8,12 +41,18 @@ export default function Navbar() {
 
             <nav id="navbar" className="navbar nav-menu">
                 <ul>
-                    <li><a href="/" className="nav-link scrollto active"><i className="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="/about" className="nav-link scrollto"><i className="bx bx-user"></i> <span>About</span></a></li>
-                    <li><a href="/resume" className="nav-link scrollto"><i className="bx bx-file-blank"></i> <span>Resume</span></a></li>
-                    <li><a href="/portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-                    <li><a href="/services" className="nav-link scrollto"><i className="bx bx-server"></i> <span>Services</span></a></li>
-                    <li><a href="/contact" className="nav-link scrollto"><i className="bx bx-envelope"></i> <span>Contact</span></a></li>
+                    {/* Utilisation de la méthode map pour un affichage dynamique de la barre de navigation */}
+                    {navLinks.map((navLink) => (
+                        <li key={navLink.name}>
+                            <a 
+                            href={navLink.href} 
+                            // Utilisation d'un ternaire pour ajouter ou non la class "active" selon le props passé
+                            className={`nav-link scrollto ${nav === navLink.name ? 'active' : ''}`}
+                            >
+                                <i className={navLink.icone}></i> <span>{navLink.name}</span>
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
 

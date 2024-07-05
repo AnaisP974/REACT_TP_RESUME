@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 export default function Resume() {
     return(
         <>
-        <Navbar/>
+        <Navbar nav="Resume" />
         <main id="main">
             <section id="resume" className="resume">
                 <div className="container" data-aos="fade-up">

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export default function Contact() {
     return (
         <>
-        <Navbar />
+        <Navbar nav="Contact" />
         <main id="main">
             <section id="contact" className="contact">
                 <div className="container" data-aos="fade-up">

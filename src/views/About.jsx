@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export default function About() {
     return (
         <>
-        <Navbar/>
+        <Navbar nav="About" />
         <main id="main">
             <section id="about" className="about">
             <div className="container" data-aos="fade-up">

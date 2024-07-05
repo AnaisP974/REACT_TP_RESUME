@@ -4,10 +4,9 @@ import Footer from '../components/Footer'
 import '../index.css'
 
 function Home() {
-
   return (
     <>
-    <Navbar/>
+    <Navbar nav="Home" />
     <Hero />
     <Footer />
     </>
