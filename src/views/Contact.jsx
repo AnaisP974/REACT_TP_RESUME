@@ -40,8 +40,10 @@ export default function Contact() {
                         </div>
 
                         <div className="col-lg-8 mt-5 mt-lg-0">
+                        {/* Utilisation de l'API Web3Form pour traiter l'envoi du formulaire par mail */}
+                        <form action="https://api.web3forms.com/submit" method="POST" role="form" className="php-email-form">
 
-                        <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                            <input type="hidden" name="access_key" value="7a66c5a5-5214-4159-b9c4-5bf3eefdac5e"/>
                             <div className="row">
                             <div className="col-md-6 form-group">
                                 <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
@@ -56,11 +58,7 @@ export default function Contact() {
                             <div className="form-group mt-3">
                             <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
-                            <div className="my-3">
-                            <div className="loading">Loading</div>
-                            <div className="error-message"></div>
-                            <div className="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
+                            
                             <div className="text-center"><button type="submit">Send Message</button></div>
                         </form>
 

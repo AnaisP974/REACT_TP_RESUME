@@ -4,11 +4,16 @@ Objectif : Le but de ce TP est d’intégrer le template HTML vers React, en ado
 
 ## Etapes de réalisation du projet
 
-- Initialisation d'un nouveau projet React Vite, installation des packages, création d'un nouveau Repository GitHub.  
-- Insertion des données HTML, CSS et JS dans le projet React, gestion des erreurs et affichage de la page.  
-- Création des premiers composants "Footer.jsx", "Hero.jsx", "Navbar.jsx".
-- Installation du React Router Dom, car je ne souhaite pas réaliser le portfolio en 'single page'. Je crée donc différentes vues pour chaque page : Home, About, Resume, Services, Portfolio et Contact.
-- Affichage dynamique de la barre de navigation et utilisation de props pour marquer la page active.
+- :white_check_mark:Initialisation d'un nouveau projet React Vite, installation des packages, création d'un nouveau Repository GitHub.  
+- :white_check_mark:Insertion des données HTML, CSS et JS dans le projet React, gestion des erreurs et affichage de la page.  
+- :white_check_mark:Création des premiers composants "Footer.jsx", "Hero.jsx", "Navbar.jsx".
+- :white_check_mark:Installation du React Router Dom, car je ne souhaite pas réaliser le portfolio en 'single page'. Je crée donc différentes vues pour chaque page : Home, About, Resume, Services, Portfolio et Contact.
+- :white_check_mark:Affichage dynamique de la barre de navigation et utilisation de props pour marquer la page active.
+- :white_check_mark:Ajout de Bootstrap dans ce projet REACT [documentation de l'installation](https://react-bootstrap.github.io/docs/getting-started/introduction), :white_check_mark:pour afficher correctement les barres de progression des skills et 🚧 le carousel de témoignage [carousel de bootstrp](https://react-bootstrap.github.io/docs/components/carousel/).🚧
+- :white_check_mark:Gestion de l'envoi d'email via le formulaire de contact.
+- :white_check_mark:Pusher le projet sur GitHub
+- Mise en production du projet sur Vercel
+- Envoi des liens au formateur.
 
 ## Utilisation bootstrap sur un Projet REACT  
 
@@ -54,4 +59,5 @@ export default function About() {
 }
 ```
 
-Doctumentation : [source](https://react-bootstrap.github.io/docs/components/progress/#example)
+Documentation : [voire source](https://react-bootstrap.github.io/docs/components/progress/#example)
+
